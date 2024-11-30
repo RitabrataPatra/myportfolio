@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Card } from '@/components/ui/card';
-import { Code2, Palette, Rocket } from 'lucide-react';
+import { BrainCog, Code2, Palette, Rocket, Server } from 'lucide-react';
 
 const skills = [
   {
@@ -14,6 +14,16 @@ const skills = [
     name: 'UI/UX Design',
     description: 'Designing intuitive and beautiful user experiences.',
     icon: Palette,
+  },
+  {
+    name: 'Backend Development',
+    description: 'Crafting robust and scalable server-side solutions to power seamless user experiences.',
+    icon: Server, // Replace with the appropriate icon for backend development
+  },
+  {
+    name: 'Data Structures and Algorithms',
+    description: 'Solving complex problems with efficient algorithms and optimized data structures to build innovative solutions.',
+    icon: BrainCog, // Replace with the appropriate icon for DSA and problem-solving
   },
   {
     name: 'Performance Optimization',
@@ -39,8 +49,8 @@ export function About() {
               With expertise in modern web technologies, I build applications that make a difference.
             </p>
           </div>
-          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-            <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+          <div className=" mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none ">
+            <dl className="grid  grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
               {skills.map((skill) => (
                 <Card key={skill.name} className="p-6">
                   <dt className="flex items-center gap-x-3 text-lg font-semibold">
