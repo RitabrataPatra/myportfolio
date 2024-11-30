@@ -34,17 +34,17 @@ export function Hero() {
             </Button>
             <div className="flex space-x-4">
               <Button variant="ghost" size="icon" className="text-white hover:text-white hover:bg-white/20" asChild>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                <a href={mylinkgithub} target="_blank" rel="noopener noreferrer">
                   <Github className="h-5 w-5" />
                 </a>
               </Button>
               <Button variant="ghost" size="icon" className="text-white hover:text-white hover:bg-white/20" asChild>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <a href={mylinklinkedin} target="_blank" rel="noopener noreferrer">
                   <Linkedin className="h-5 w-5" />
                 </a>
               </Button>
               <Button variant="ghost" size="icon" className="text-white hover:text-white hover:bg-white/20" asChild>
-                <a href="mailto:contact@example.com">
+                <a href="mailto:ritabratapatra35@gmail.com">
                   <Mail className="h-5 w-5" />
                 </a>
               </Button>

@@ -28,7 +28,7 @@ export function Navbar() {
             className="-m-1.5 p-1.5 text-2xl font-bold text-white"
             onClick={(e) => scrollToSection(e, 'home')}
           >
-            Portfolio
+            {myname}
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -51,7 +51,7 @@ export function Navbar() {
               key={item.name}
               href={item.href}
               onClick={(e) => scrollToSection(e, item.id)}
-              className="text-sm font-semibold leading-6 text-white hover:text-white/80 transition-colors"
+              className="text-sm font-semibold leading-6 text-gray-400 hover:text-white/80 transition-colors"
             >
               {item.name}
             </a>
@@ -78,7 +78,7 @@ export function Navbar() {
               </a>
             ))}
             <div className="py-2">
-              {/* <ThemeToggle /> */}
+              <ThemeToggle />
             </div>
           </div>
         </div>
