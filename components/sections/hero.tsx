@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowRight,GithubIcon, Linkedin, Mail } from 'lucide-react';
 
 
 export const mylinkgithub = "https://github.com/RitabrataPatra";
@@ -20,7 +20,7 @@ export function Hero() {
           className="mx-auto max-w-2xl text-center"
         >
           <h1 className="text-4xl font-bold tracking-tight sm:text-6xl text-white">
-            Hi, I'm <span className="text-primary">Ritabrata Patra</span>
+            Hi, I'm <span className="text-primary">[Ritabrata Patra]</span>
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-200">
             A passionate full-stack developer crafting beautiful and functional web experiences.
@@ -35,7 +35,7 @@ export function Hero() {
             <div className="flex space-x-4">
               <Button variant="ghost" size="icon" className="text-white hover:text-white hover:bg-white/20" asChild>
                 <a href={mylinkgithub} target="_blank" rel="noopener noreferrer">
-                  <Github className="h-5 w-5" />
+                  <GithubIcon className="h-5 w-5" />
                 </a>
               </Button>
               <Button variant="ghost" size="icon" className="text-white hover:text-white hover:bg-white/20" asChild>
