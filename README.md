@@ -7,7 +7,7 @@ Welcome to my personal portfolio website repository! This project showcases my s
 ## 🚀 Features
 
 - **Responsive Design**: Fully optimized for desktops, tablets, and mobile devices.
-- **Modern Technologies**: Built with [Next.js](https://nextjs.org/) (or other tech used).
+- **Modern Technologies**: Built with [Next.js](https://nextjs.org/).
 - **Interactive UI**: Smooth navigation and engaging animations.
 - **Dynamic Projects Section**: Displays my best work with live previews and code links.
 - **Contact Form**: Reach out to me directly via a simple and functional form.
