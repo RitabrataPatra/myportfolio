@@ -7,11 +7,11 @@ import { ExternalLink, Github } from 'lucide-react';
 
 const projects = [
   {
-    title: 'Project One',
-    description: 'A modern e-commerce platform built with Next.js and Stripe.',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80',
-    github: 'https://github.com',
-    demo: 'https://example.com',
+    title: 'Store-It',
+    description: 'StoreIt is a user-friendly cloud storage platform designed to keep your files secure and accessible from anywhere. With seamless file uploads, sharing, and organization, it’s perfect for individuals.',
+    image: 'https://github.com/RitabrataPatra/storeit/raw/main/public/assets/storeit.png',
+    github: 'https://github.com/RitabrataPatra/storeit',
+    demo: 'https://store-it-here.vercel.app/',
   },
   {
     title: 'Project Two',
@@ -25,7 +25,7 @@ const projects = [
     description: 'AI-powered content management system.',
     image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800&q=80',
     github: 'https://github.com',
-    demo: 'https://example.com',
+    demo: '',
   },
 ];
 
@@ -55,14 +55,14 @@ export function Projects() {
                 />
                 <CardHeader>
                   <CardTitle>{project.title}</CardTitle>
-                  <CardDescription>{project.description}</CardDescription>
+                  <CardDescription className='line-clamp-3'>{project.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex space-x-4">
                     <Button variant="outline" size="sm" asChild>
                       <a href={project.github} target="_blank" rel="noopener noreferrer">
                         <Github className="mr-2 h-4 w-4" />
-                        Code
+                        Details
                       </a>
                     </Button>
                     <Button size="sm" asChild>
