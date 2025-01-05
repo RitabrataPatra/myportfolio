@@ -32,7 +32,7 @@ export function Hero() {
           
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Button asChild className="bg-white text-black hover:bg-gray-100">
-              <a href="#contact">
+              <a href="https://www.linkedin.com/in/ritabratapatra">
                 Contact me <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </Button>
@@ -47,11 +47,11 @@ export function Hero() {
                   <Linkedin className="h-5 w-5" />
                 </a>
               </Button>
-              <Button variant="ghost" size="icon" className="text-white hover:text-white hover:bg-white/20" asChild>
+              {/* <Button variant="ghost" size="icon" className="text-white hover:text-white hover:bg-white/20" asChild>
                 <a href="mailto:ritabratapatra35@gmail.com">
                   <Mail className="h-5 w-5" />
                 </a>
-              </Button>
+              </Button> */}
             </div>
           </div>
         </motion.div>
