@@ -16,7 +16,7 @@ const projects = [
   },
   {
     title: 'Catalog',
-    description: 'A catalog of products with a user-friendly interface.You can easily add, edit, and delete products with AuthJS secure authentication',
+    description: 'A catalog of products with a user-friendly interface ,pagination and secure AuthJS authentication.You can easily add, edit, and delete products.',
     image: 'https://files.oaiusercontent.com/file-CFFDhb2Pndtknhy9UyebPS?se=2025-01-05T09%3A53%3A03Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D696fece4-31aa-4643-93d0-7a215b0d4c65.webp&sig=xLffuA0N1j8KTpKrZK1in%2BRV5SdPMOL82skDIPb0dXA%3D',
     github: 'https://github.com/RitabrataPatra/productcatalog',
     demo: 'https://productcatalog-pc.vercel.app/',
