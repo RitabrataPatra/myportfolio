@@ -20,12 +20,17 @@ export function Hero() {
           className="mx-auto max-w-2xl text-center"
         >
           <h1 className="text-4xl font-bold tracking-tight sm:text-6xl text-white">
-            Hi, I'm <span className="text-primary">[Ritabrata Patra]</span>
+            Hi, I&apos;m <span className="text-primary">Ritabrata 👋</span>
           </h1>
-          <p className="mt-6 text-lg leading-8 text-gray-200">
-            A passionate full-stack developer crafting beautiful and functional web experiences.
-            Let's build something amazing together.
+
+          <div className='bg-neutral-600 bg-opacity-60 p-4 rounded-lg mt-8 border border-neutral-500'>
+          <p className="text-lg leading- text-gray-200 text-left">
+ 
+          As a child, my fascination with computers and technology began with gaming. I spent countless hours immersed in virtual worlds, but over time, my curiosity grew beyond just playing games. I started exploring how they were made, which led me to <span className='text-primary font-bold underline'>programming and software development</span>. What began as a casual interest soon became a deeper pursuit, and I&apos;ve loved <span className='text-primary font-bold underline'>coding</span> ever since 💖.
+            <hr className='my-4 border-gray-400'/>
           </p>
+          </div>
+          
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Button asChild className="bg-white text-black hover:bg-gray-100">
               <a href="#contact">
