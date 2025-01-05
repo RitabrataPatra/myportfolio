@@ -45,12 +45,11 @@ export function About() {
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">About Me</h2>
             <p className="mt-6 text-lg leading-8 text-muted-foreground">
-            <p>
+
               Currently pursuing <span className='text-primary'>BTech in Information Technology </span>and enrolled in 3rd Year of my college.
               I am proficient in programming languages such as <span className='text-primary'>Java, and C++ </span>and have a strong interest in building software/applications that aims to solve real-world problems leveraging latest frameworks and technologies.
             </p>
             <hr className='mt-4 border-neutral-700'/>
-            </p>
           </div>
           <div className=" mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none ">
             <dl className="grid  grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">

@@ -39,7 +39,7 @@ export function Contact() {
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Get in Touch</h2>
             <p className="mt-6 text-lg leading-8 text-muted-foreground">
-              Have a project in mind? Let's discuss how we can work together.
+              Have a project in mind? Let&apos;s discuss how we can work together.
             </p>
           </div>
           <form onSubmit={handleSubmit} className="mx-auto mt-16 max-w-xl">

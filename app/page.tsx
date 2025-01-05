@@ -7,6 +7,7 @@ import { Skills } from '@/components/sections/skills';
 import { Projects } from '@/components/sections/projects';
 import { Contact } from '@/components/sections/contact';
 import { Toaster } from '@/components/ui/toaster';
+import Footer from '@/components/sections/footer';
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
       <About />
       <Skills />
       <Projects />
-      <Contact />
+      <Footer />
       <Toaster />
     </main>
   );

@@ -27,7 +27,6 @@ export function Hero() {
           <p className="text-lg leading- text-gray-200 text-left">
  
           As a child, my fascination with computers and technology began with gaming. I spent countless hours immersed in virtual worlds, but over time, my curiosity grew beyond just playing games. I started exploring how they were made, which led me to <span className='text-primary font-bold underline'>programming and software development</span>. What began as a casual interest soon became a deeper pursuit, and I&apos;ve loved <span className='text-primary font-bold underline'>coding</span> ever since 💖.
-            <hr className='my-4 border-gray-400'/>
           </p>
           </div>
           
