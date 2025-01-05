@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, Github } from 'lucide-react';
+import Image from 'next/image';
 
 const projects = [
   {
@@ -14,11 +15,11 @@ const projects = [
     demo: 'https://store-it-here.vercel.app/',
   },
   {
-    title: 'Project Two',
-    description: 'Real-time chat application using WebSocket and React.',
-    image: 'https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=800&q=80',
-    github: 'https://github.com',
-    demo: 'https://example.com',
+    title: 'Catalog',
+    description: 'A catalog of products with a user-friendly interface.You can easily add, edit, and delete products with AuthJS secure authentication',
+    image: 'https://files.oaiusercontent.com/file-CFFDhb2Pndtknhy9UyebPS?se=2025-01-05T09%3A53%3A03Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D696fece4-31aa-4643-93d0-7a215b0d4c65.webp&sig=xLffuA0N1j8KTpKrZK1in%2BRV5SdPMOL82skDIPb0dXA%3D',
+    github: 'https://github.com/RitabrataPatra/productcatalog',
+    demo: 'https://productcatalog-pc.vercel.app/',
   },
   {
     title: 'Project Three',
@@ -48,9 +49,11 @@ export function Projects() {
           <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-3">
             {projects.map((project) => (
               <Card key={project.title} className="overflow-hidden">
-                <img
+                <Image
                   src={project.image}
                   alt={project.title}
+                  width={100}
+                  height={100}
                   className="h-48 w-full object-cover"
                 />
                 <CardHeader>
@@ -68,7 +71,7 @@ export function Projects() {
                     <Button size="sm" asChild>
                       <a href={project.demo} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="mr-2 h-4 w-4" />
-                        Demo
+                        Live Demo
                       </a>
                     </Button>
                   </div>
