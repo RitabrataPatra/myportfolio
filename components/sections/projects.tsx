@@ -21,13 +21,13 @@ const projects = [
     github: 'https://github.com/RitabrataPatra/productcatalog',
     demo: 'https://productcatalog-pc.vercel.app/',
   },
-  // {
-  //   title: 'Project Three',
-  //   description: 'AI-powered content management system.',
-  //   image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800&q=80',
-  //   github: 'https://github.com',
-  //   demo: '',
-  // },
+  {
+    title: 'Project Three',
+    description: 'TBD',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhsJlYVm2170FPd4T0PFjuFz5ljvaTy7MLdQ&s',
+    github: 'https://github.com/RitabrataPatra/',
+    demo: '',
+  },
 ];
 
 export function Projects() {
