@@ -11,7 +11,6 @@ import {
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github, Loader2Icon } from "lucide-react";
 import Image from "next/image";
-import CarouselComp from "../CarouselComp";
 
 import {
   Carousel,
