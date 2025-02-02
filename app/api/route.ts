@@ -5,7 +5,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 
 
-export const handleError = (error: any) => {
+const handleError = (error: any) => {
   console.error("API Error:", error.message || error);
   return NextResponse.json({ error: error.message || "Internal Server Error" }, { status: 500 });
 };
