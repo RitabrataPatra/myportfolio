@@ -12,6 +12,15 @@ import { useRouter } from 'next/navigation';
 const Page = () => {
   const { toast } = useToast()
   const router = useRouter();
+  const [isLoading, setIsLoading] = React.useState(false);
+  const [formData, setFormData] = React.useState({
+    title: "",
+    description: "",
+    image: "",
+    github: "",
+    demo: "",
+  });
+  
   const getProjects = async () => {
     try {
       const payload = await axios.get("/api");
@@ -27,14 +36,6 @@ const Page = () => {
   }, []);
 
  
-  const [isLoading, setIsLoading] = React.useState(false);
-  const [formData, setFormData] = React.useState({
-    title: "",
-    description: "",
-    image: "",
-    github: "",
-    demo: "",
-  });
 
   const handleOnChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
