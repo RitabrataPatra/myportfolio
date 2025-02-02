@@ -23,6 +23,7 @@ import {
 import { useEffect, useState } from "react";
 import axios from "axios";
 
+
 export function Projects() {
   const [projects, setProjects] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
