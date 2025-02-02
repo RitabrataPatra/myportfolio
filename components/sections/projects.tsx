@@ -22,36 +22,6 @@ import {
 } from "@/components/ui/carousel";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { set } from "mongoose";
-
-// const projects = [
-//   {
-//     title: "Store-It",
-//     description:
-//       "StoreIt is a user-friendly cloud storage platform designed to keep your files secure and accessible from anywhere. With seamless file uploads, sharing, and organization, it’s perfect for individuals.",
-//     image:
-//       "https://github.com/RitabrataPatra/storeit/raw/main/public/assets/storeit.png",
-//     githuburl: "https://github.com/RitabrataPatra/storeit",
-//     demourl: "https://store-it-here.vercel.app/",
-//   },
-//   {
-//     title: "Catalog",
-//     description:
-//       "A catalog of products with a user-friendly interface ,pagination and secure AuthJS authentication.You can easily add, edit, and delete products.",
-//     image:
-//       "https://img.freepik.com/premium-vector/book-logo-design-icon-vector_9850-5081.jpg?semt=ais_hybrid",
-//     githuburl: "https://github.com/RitabrataPatra/productcatalog",
-//     demourl: "https://productcatalog-pc.vercel.app/",
-//   },
-//   {
-//     title: "Project Three",
-//     description: "TBD",
-//     image:
-//       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhsJlYVm2170FPd4T0PFjuFz5ljvaTy7MLdQ&s",
-//     githuburl: "https://github.com/RitabrataPatra/",
-//     demourl: "",
-//   },
-// ];
 
 export function Projects() {
   const [projects, setProjects] = useState([]);
@@ -116,8 +86,8 @@ export function Projects() {
                                 : "https://img.freepik.com/premium-vector/book-logo-design-icon-vector_9850-5081.jpg?semt=ais_hybrid"
                             }
                             alt="projectImage"
-                            width={100}
-                            height={100}
+                            width={400}
+                            height={400}
                             className="h-44 w-full object-cover"
                           />
                           <CardHeader>
