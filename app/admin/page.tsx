@@ -8,11 +8,15 @@ import { Button } from "@/components/ui/button";
 import { set } from 'mongoose';
 import { useToast } from '@/hooks/use-toast';
 import { useRouter } from 'next/navigation';
+import Cookies from "js-cookie";
+import { isLastDayOfMonth } from 'date-fns';
+import { LoaderIcon } from 'lucide-react';
 
 const Page = () => {
   const { toast } = useToast()
   const router = useRouter();
   const [isLoading, setIsLoading] = React.useState(false);
+  const [isLoginLoading, setIsLoginLoading] = React.useState(true);
   const [formData, setFormData] = React.useState({
     title: "",
     description: "",
@@ -20,20 +24,40 @@ const Page = () => {
     github: "",
     demo: "",
   });
-  
-  const getProjects = async () => {
-    try {
-      const payload = await axios.get("/api");
-      const response = payload.data;
-      // console.log(response);
-    } catch (error) {
-      console.log(error);
-    }
-  }
 
-  useEffect(() => {  
-    getProjects();
-  }, []);
+
+  useEffect(() => {
+    const token = Cookies.get("auth_token");
+
+    if (!token) {
+      router.push("/admin/login"); // Redirect to login if not authenticated
+    }else{
+      setIsLoginLoading(false);
+    }
+  }, [router]);
+
+
+
+useEffect(() => {  
+    const getProjects = async () => {
+      try {
+        const payload = await axios.get("/api");
+        const response = payload.data;
+        // console.log(response);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+    if(!isLoginLoading){
+      getProjects();
+    }
+  }, [isLoginLoading]);
+
+  if(isLoginLoading){
+    return (<div className='h-screen flex items-center justify-center'>
+      <LoaderIcon className='animate-spin' size={24} />
+    </div>)
+  }
 
  
 
